@@ -1,0 +1,10 @@
+language: java
+jdk:
+ - oraclejdk8
+deploy:
+ provider: heroku
+ api-key:
+  secure: "337105f5-46a8-4a21-9d48-dd8d50b57337"
+ app: "vyuka-webapp"
+before_install:
+  - chmod +x mvnw
